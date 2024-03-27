@@ -2,5 +2,8 @@
     "files.associations": {
         "type_traits": "c",
         "binary_trees.h": "c"
-    }
+    },
+    "cSpell.words": [
+        "inorder"
+    ]
 }
