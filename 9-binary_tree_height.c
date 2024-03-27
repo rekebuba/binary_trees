@@ -19,7 +19,14 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	return (max(count_right, count_left));
 }
 
+/**
+ * max - return the maximum number
+ *
+ * @a: the first number
+ * @b: the second number
+ * Return: int
+ */
 int max(int a, int b)
 {
-    return (a > b) ? a : b;
+	return (a > b ? a : b);
 }
