@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "type_traits": "c",
-        "binary_trees.h": "c"
+        "binary_trees.h": "c",
+        "limits": "c"
     },
     "cSpell.words": [
         "inorder"
