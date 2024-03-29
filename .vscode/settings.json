@@ -5,6 +5,7 @@
         "limits": "c"
     },
     "cSpell.words": [
-        "inorder"
+        "inorder",
+        "levelorder"
     ]
 }
