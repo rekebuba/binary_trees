@@ -14,9 +14,9 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	if (!tree)
 		return (0);
 
-	count_right = tree->left ? 1 + binary_tree_height(tree->left) : 0;
-	count_left = tree->right ? 1 + binary_tree_height(tree->right) : 0;
-	return (max(count_right, count_left));
+	count_left = tree->left ? 1 + binary_tree_height(tree->left) : 0;
+	count_right = tree->right ? 1 + binary_tree_height(tree->right) : 0;
+	return (max(count_left, count_right));
 }
 
 /**
