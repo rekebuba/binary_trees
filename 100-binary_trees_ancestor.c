@@ -13,7 +13,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 
 	binary_tree_t *parent, *ancestor;
 
-	if (!first || !second)
+	if (!first || !second || !first->parent || !second->parent)
 	{
 		return (NULL);
 	}
