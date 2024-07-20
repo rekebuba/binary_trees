@@ -10,7 +10,30 @@
  */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
+	int first, last = 0;
+	const binary_tree_t *a[100];
+
 	if (!tree || !func)
 		return;
 
+	a[last++] = tree;
+	func(a[first]->n);
+
+	while (first != last)
+	{
+
+		if (a[first]->left)
+		{
+			func(a[first]->left->n);
+			a[last++] = a[first]->left;
+		}
+
+		if (a[first]->right)
+		{
+			func(a[first]->right->n);
+			a[last++] = a[first]->right;
+		}
+
+		first++;
+	}
 }
