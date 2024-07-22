@@ -10,7 +10,7 @@
  */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
-	int first, last = 0;
+	int first = 0, last = 0;
 	const binary_tree_t *a[100];
 
 	if (!tree || !func)
